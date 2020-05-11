@@ -9,6 +9,8 @@ It's basically a wrapper for the command-line application [osx-razer-led](https:
 ## Usage
 Download the [latest release](https://github.com/Reven/razer-osx-led-gui/releases/latest/download/Razer-OSX-LED.GUI.zip). Just drop the app into your applications folder. You don't need to install the original `razer-osx-led` script, it's baked in. You can add it to your startup items to have the saved settig apply after startup.
 
+__NOTE__: You can force the color pickers to appear using `Alt+click` on the color wells. I don't know why the color wells don't always bring up the color pickers. Not closing the color picker before dismissing the window causes this to happen immediately, but no idea hoy to force a new instance directly from the code. If anyone can help, it would be awesome. 
+
 The currently supported effects are the same as in the original app, with some adaptations. Your device might not support all of them.
 
 * __info__: Used internally to show detected device
@@ -26,7 +28,7 @@ __NT__: Haven't been able to test, as this effect is not supported by my hardwar
 * Add contraints to views and clean up layout
 
 ### BUGS:
-* Color pickers don't always appear. Is there a way to integrate them in the view?
+* Color pickers don't always appear. Is there a way to integrate them in the view? Help!
 * Dismissing 'About' view without clicking on 'Back' leaves the app in an undetermined state, with no way to quit.
 * Driver not always responds correctly; this isn't handled at all. Should retry?
 
