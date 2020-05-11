@@ -4,7 +4,7 @@ This is an agent status bar app that controls keyboard leds on a Razer Blade lap
 
 ![screenshot.png](screenshot.png?raw=true "Razer-OSX-LED-GUI")
 
-It's basically a wrapper for the command-line application [osx-razer-led](https://github.com/DocSystem/osx-razer-led) originally developed by @DocSystem, building upon work by @kprinssu and @dylanparker, and the linux driver code by @terrycain. With some _special_ glue.
+It's basically a wrapper for the command-line application [osx-razer-led](https://github.com/DocSystem/osx-razer-led) originally developed by [@DocSystem](https://github.com/DocSystem), building upon work by [@kprinssu](https://github.com/kprinssu) and [@dylanparker](https://github.com/dylanparker), and the linux driver code by [@terrycain](https://github.com/terrycain). With some _special_ glue.
 
 ## Usage
 Download the [latest release](https://github.com/Reven/razer-osx-led-gui/releases/latest/download/Razer-OSX-LED.GUI.zip). Just drop the app into your applications folder. You don't need to install the original `razer-osx-led` script, it's baked in. You can add it to your startup items to have the saved settig apply after startup.
@@ -34,5 +34,12 @@ __NT__: Haven't been able to test, as this effect is not supported by my hardwar
 * Some kind of error management?
 * Check selected things to see if they form a compatible combination for command.
 
+## Acknowledgements
+These are the repos where most of the actual work was done:
+* https://github.com/openrazer/openrazer
+* https://github.com/kprinssu/osx-razer-blade
+* https://github.com/dylanparker/osx-razer-led
+* https://github.com/DocSystem/osx-razer-led
 
+## License
 This project unless otherwise stated in the file is licensed under the GPLv2 license.
