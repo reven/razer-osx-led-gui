@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17286AF42467886C0002099B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17286AF32467886C0002099B /* AppDelegate.swift */; };
+		17286AF82467886F0002099B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17286AF72467886F0002099B /* Assets.xcassets */; };
+		17286AFB2467886F0002099B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17286AF92467886F0002099B /* Main.storyboard */; };
+		17286B0524678A4A0002099B /* GUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17286B0424678A4A0002099B /* GUIViewController.swift */; };
+		17286B0724678A7C0002099B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17286B0624678A7C0002099B /* AboutViewController.swift */; };
+		17286B0924678C5D0002099B /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17286B0824678C5D0002099B /* StatusManager.swift */; };
+		17286B2C24678DDE0002099B /* main_adapted.c in Sources */ = {isa = PBXBuildFile; fileRef = 17286B2524678DDE0002099B /* main_adapted.c */; };
+		17286B2D24678DDE0002099B /* razerchromacommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 17286B2724678DDE0002099B /* razerchromacommon.c */; };
+		17286B2E24678DDE0002099B /* razercommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 17286B2824678DDE0002099B /* razercommon.c */; };
+		17286B2F24678DDE0002099B /* razerkbd_driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 17286B2A24678DDE0002099B /* razerkbd_driver.c */; };
+		17286B312467E5CD0002099B /* ColorDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17286B302467E5CC0002099B /* ColorDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17286AF02467886C0002099B /* Razer-OSX-LED GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Razer-OSX-LED GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17286AF32467886C0002099B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17286AF72467886F0002099B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17286AFA2467886F0002099B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17286AFC2467886F0002099B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17286AFD2467886F0002099B /* Razer_OSX_LED_GUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Razer_OSX_LED_GUI.entitlements; sourceTree = "<group>"; };
+		17286B03246789AA0002099B /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		17286B0424678A4A0002099B /* GUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUIViewController.swift; sourceTree = "<group>"; };
+		17286B0624678A7C0002099B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		17286B0824678C5D0002099B /* StatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
+		17286B1724678D5C0002099B /* Razer-OSX-LED GUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Razer-OSX-LED GUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		17286B2424678DDE0002099B /* razerchromacommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = razerchromacommon.h; sourceTree = "<group>"; };
+		17286B2524678DDE0002099B /* main_adapted.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main_adapted.c; sourceTree = "<group>"; };
+		17286B2624678DDE0002099B /* razerkbd_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = razerkbd_driver.h; sourceTree = "<group>"; };
+		17286B2724678DDE0002099B /* razerchromacommon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = razerchromacommon.c; sourceTree = "<group>"; };
+		17286B2824678DDE0002099B /* razercommon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = razercommon.c; sourceTree = "<group>"; };
+		17286B2924678DDE0002099B /* razercommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = razercommon.h; sourceTree = "<group>"; };
+		17286B2A24678DDE0002099B /* razerkbd_driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = razerkbd_driver.c; sourceTree = "<group>"; };
+		17286B2B24678DDE0002099B /* main_adapted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_adapted.h; sourceTree = "<group>"; };
+		17286B302467E5CC0002099B /* ColorDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17286AED2467886C0002099B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17286AE72467886C0002099B = {
+			isa = PBXGroup;
+			children = (
+				17286AF22467886C0002099B /* Razer-OSX-LED GUI */,
+				17286AF12467886C0002099B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17286AF12467886C0002099B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17286AF02467886C0002099B /* Razer-OSX-LED GUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17286AF22467886C0002099B /* Razer-OSX-LED GUI */ = {
+			isa = PBXGroup;
+			children = (
+				17286AF32467886C0002099B /* AppDelegate.swift */,
+				17286B03246789AA0002099B /* Notes.md */,
+				17286B0424678A4A0002099B /* GUIViewController.swift */,
+				17286B0624678A7C0002099B /* AboutViewController.swift */,
+				17286AF72467886F0002099B /* Assets.xcassets */,
+				17286AF92467886F0002099B /* Main.storyboard */,
+				17286B302467E5CC0002099B /* ColorDefaults.swift */,
+				17286AFC2467886F0002099B /* Info.plist */,
+				17286B0824678C5D0002099B /* StatusManager.swift */,
+				17286AFD2467886F0002099B /* Razer_OSX_LED_GUI.entitlements */,
+				17286B1724678D5C0002099B /* Razer-OSX-LED GUI-Bridging-Header.h */,
+				17286B2524678DDE0002099B /* main_adapted.c */,
+				17286B2B24678DDE0002099B /* main_adapted.h */,
+				17286B2724678DDE0002099B /* razerchromacommon.c */,
+				17286B2424678DDE0002099B /* razerchromacommon.h */,
+				17286B2824678DDE0002099B /* razercommon.c */,
+				17286B2924678DDE0002099B /* razercommon.h */,
+				17286B2A24678DDE0002099B /* razerkbd_driver.c */,
+				17286B2624678DDE0002099B /* razerkbd_driver.h */,
+			);
+			path = "Razer-OSX-LED GUI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17286AEF2467886C0002099B /* Razer-OSX-LED GUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17286B002467886F0002099B /* Build configuration list for PBXNativeTarget "Razer-OSX-LED GUI" */;
+			buildPhases = (
+				17286AEC2467886C0002099B /* Sources */,
+				17286AED2467886C0002099B /* Frameworks */,
+				17286AEE2467886C0002099B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Razer-OSX-LED GUI";
+			productName = "Razer-OSX-LED GUI";
+			productReference = 17286AF02467886C0002099B /* Razer-OSX-LED GUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17286AE82467886C0002099B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Roberto Sanchez";
+				TargetAttributes = {
+					17286AEF2467886C0002099B = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 17286AEB2467886C0002099B /* Build configuration list for PBXProject "Razer-OSX-LED GUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17286AE72467886C0002099B;
+			productRefGroup = 17286AF12467886C0002099B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17286AEF2467886C0002099B /* Razer-OSX-LED GUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17286AEE2467886C0002099B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17286AF82467886F0002099B /* Assets.xcassets in Resources */,
+				17286AFB2467886F0002099B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17286AEC2467886C0002099B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17286B312467E5CD0002099B /* ColorDefaults.swift in Sources */,
+				17286B2E24678DDE0002099B /* razercommon.c in Sources */,
+				17286B0524678A4A0002099B /* GUIViewController.swift in Sources */,
+				17286B2F24678DDE0002099B /* razerkbd_driver.c in Sources */,
+				17286B0924678C5D0002099B /* StatusManager.swift in Sources */,
+				17286B2C24678DDE0002099B /* main_adapted.c in Sources */,
+				17286B0724678A7C0002099B /* AboutViewController.swift in Sources */,
+				17286AF42467886C0002099B /* AppDelegate.swift in Sources */,
+				17286B2D24678DDE0002099B /* razerchromacommon.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17286AF92467886F0002099B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17286AFA2467886F0002099B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17286AFE2467886F0002099B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17286AFF2467886F0002099B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		17286B012467886F0002099B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Razer-OSX-LED GUI/Razer_OSX_LED_GUI.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Razer-OSX-LED GUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "reven.org.Razer-OSX-LED-GUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Razer-OSX-LED GUI/Razer-OSX-LED GUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17286B022467886F0002099B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Razer-OSX-LED GUI/Razer_OSX_LED_GUI.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Razer-OSX-LED GUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "reven.org.Razer-OSX-LED-GUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Razer-OSX-LED GUI/Razer-OSX-LED GUI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17286AEB2467886C0002099B /* Build configuration list for PBXProject "Razer-OSX-LED GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17286AFE2467886F0002099B /* Debug */,
+				17286AFF2467886F0002099B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17286B002467886F0002099B /* Build configuration list for PBXNativeTarget "Razer-OSX-LED GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17286B012467886F0002099B /* Debug */,
+				17286B022467886F0002099B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17286AE82467886C0002099B /* Project object */;
+}
