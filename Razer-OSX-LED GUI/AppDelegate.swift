@@ -10,19 +10,9 @@ import Cocoa
 
 // Data model for app variables.
 
-//class ModelData: NSObject {
-//    // Create the object with sensible values first, in case we can't find defaults
-//    static let razerOsxLed: ModelData = ModelData()
-//    var initApply: Bool = false
-//    var detected = "No device detected"
-//    var brightness: Int = 0
-//    var time:Int = 2 // Unused, but part of passable vars
-//    var color1:NSColor = NSColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0)
-//    var color2:NSColor = NSColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0)
-//}
-
-// Probably a Struct works better and is accesible everywhere. We can simplify asignations in the Controller.
+// Struct works better and is accesible everywhere.
 struct Razer {
+    //First get the nsObject by defining as an optional anyObject
     static var initApply: Bool = false
     static var detected: String = "No device detected"
     static var animation: String = "static"
@@ -32,6 +22,7 @@ struct Razer {
     static var color2: NSColor = NSColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
     static var singleColor: Bool = false
     static var ignoreColor: Bool = false
+    static var appVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?"
 }
 
 @NSApplicationMain
@@ -51,6 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Razer.color2 = defaults.color(forKey: "color2") ?? Razer.color2
         Razer.singleColor = defaults.bool(forKey: "singleColor")
         Razer.ignoreColor = defaults.bool(forKey: "ignoreColor")
+        
         
         // Check if initApplay is true and if so call pollDevice()
         if (Razer.initApply == true) {

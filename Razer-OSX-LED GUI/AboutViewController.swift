@@ -9,10 +9,13 @@
 import Cocoa
 
 class AboutViewController: NSViewController {
+    
+    @IBOutlet weak var versionNum: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        versionNum.stringValue = "v\(Razer.appVersion)"
     }
     
     
