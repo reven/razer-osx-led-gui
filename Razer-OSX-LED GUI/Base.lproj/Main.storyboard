@@ -717,7 +717,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="90R-Gj-7qm">
-                                <rect key="frame" x="18" y="169" width="40" height="16"/>
+                                <rect key="frame" x="127" y="169" width="40" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Effect" id="c9V-Tj-kTr">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -733,7 +733,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JFq-Lk-hG1">
-                                <rect key="frame" x="18" y="140" width="95" height="26"/>
+                                <rect key="frame" x="127" y="140" width="95" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="hCY-7L-365"/>
                                     <constraint firstAttribute="width" constant="90" id="o1R-vS-t9f"/>
@@ -845,6 +845,17 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBn-6Z-1oX">
+                                <rect key="frame" x="16" y="167" width="53" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Logo" bezelStyle="regularSquare" imagePosition="left" inset="2" id="96M-Ld-Ehe">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setLogo:" target="XfG-lQ-9wD" id="4Zs-rF-C8D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="srM-wx-PaM" firstAttribute="leading" secondItem="swu-I3-GMt" secondAttribute="leading" id="0fo-As-hdG"/>
@@ -852,7 +863,7 @@ DQ
                             <constraint firstItem="Avv-Et-D8u" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="81" id="6XJ-58-fns"/>
                             <constraint firstItem="swu-I3-GMt" firstAttribute="baseline" secondItem="R27-dP-pxX" secondAttribute="baseline" id="6e4-Zh-1dq"/>
                             <constraint firstItem="srM-wx-PaM" firstAttribute="baseline" secondItem="sBQ-qT-hLD" secondAttribute="baseline" id="8Hg-qo-ncy"/>
-                            <constraint firstItem="JFq-Lk-hG1" firstAttribute="leading" secondItem="srM-wx-PaM" secondAttribute="leading" id="8oE-EV-eRQ"/>
+                            <constraint firstItem="JFq-Lk-hG1" firstAttribute="leading" secondItem="srM-wx-PaM" secondAttribute="leading" constant="109" id="8oE-EV-eRQ"/>
                             <constraint firstItem="Ief-KE-p4g" firstAttribute="trailing" secondItem="MnG-8r-XRW" secondAttribute="trailing" id="8ur-7o-jj3"/>
                             <constraint firstItem="aYh-e2-yo5" firstAttribute="baseline" secondItem="Dx2-Rj-jV2" secondAttribute="firstBaseline" id="9ig-H1-fOA"/>
                             <constraint firstItem="x7z-jj-Kh3" firstAttribute="leading" secondItem="22d-4u-hK8" secondAttribute="trailing" constant="16" id="Eup-wF-IjZ"/>
@@ -880,7 +891,7 @@ DQ
                             <constraint firstItem="aYh-e2-yo5" firstAttribute="leading" secondItem="Dx2-Rj-jV2" secondAttribute="trailing" constant="41" id="gyq-A7-D8s"/>
                             <constraint firstItem="Avv-Et-D8u" firstAttribute="top" secondItem="B0c-4g-lRK" secondAttribute="bottom" constant="16" id="jfC-VE-9LQ"/>
                             <constraint firstItem="Z99-As-9Bf" firstAttribute="top" secondItem="Dx2-Rj-jV2" secondAttribute="bottom" constant="3" id="nZN-4v-VFF"/>
-                            <constraint firstItem="90R-Gj-7qm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="rS2-F8-0v9"/>
+                            <constraint firstItem="90R-Gj-7qm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="129" id="rS2-F8-0v9"/>
                             <constraint firstItem="Ief-KE-p4g" firstAttribute="leading" secondItem="Z99-As-9Bf" secondAttribute="trailing" constant="56" id="sEH-Fy-wh9"/>
                             <constraint firstItem="22d-4u-hK8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="28" id="t4W-7v-sOh"/>
                             <constraint firstItem="Dx2-Rj-jV2" firstAttribute="leading" secondItem="Z99-As-9Bf" secondAttribute="leading" id="vyh-ft-dZW"/>
@@ -897,6 +908,7 @@ DQ
                         <outlet property="detectedTextField" destination="x7z-jj-Kh3" id="OKy-IN-Bu1"/>
                         <outlet property="ignoreColor" destination="B0c-4g-lRK" id="tIO-Ps-ncg"/>
                         <outlet property="initApply" destination="Avv-Et-D8u" id="XZa-bn-VqD"/>
+                        <outlet property="logoOn" destination="LBn-6Z-1oX" id="tX0-Db-rnc"/>
                         <outlet property="singleColor" destination="sBQ-qT-hLD" id="fBj-Rc-uZn"/>
                     </connections>
                 </viewController>

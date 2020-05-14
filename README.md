@@ -21,6 +21,7 @@ The currently supported effects are the same as in the original command line app
 * __spectrum__: Cycles through color spectrum
 * __wave__: Spectrum colored wave accross keyboard. Direction not implemented, defaults to `right`. __NT__
 * __brightness__: Slider passes an integer (0-255) that sets the brightness value.
+* __logo__: Turns the back logo on or off. __NT__
 
 __NT__: Haven't been able to test, as this effect is not supported by my hardware.
 

@@ -23,6 +23,7 @@ struct Razer {
     static var singleColor: Bool = false
     static var ignoreColor: Bool = false
     static var appVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?"
+    static var logo: Bool = false
 }
 
 @NSApplicationMain
@@ -42,6 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Razer.color2 = defaults.color(forKey: "color2") ?? Razer.color2
         Razer.singleColor = defaults.bool(forKey: "singleColor")
         Razer.ignoreColor = defaults.bool(forKey: "ignoreColor")
+        Razer.logo = defaults.bool(forKey: "logo")
         
         
         // Check if initApplay is true and if so call pollDevice()
@@ -79,6 +81,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             let cmd = Razer.animation + colorInfo
             pollDevice(cmd)
+            let logoTxt = Razer.logo ? "logo on" : "logo off"
+            pollDevice(logoTxt)
             pollDevice("brightness \(Razer.brightness)")
             
         }

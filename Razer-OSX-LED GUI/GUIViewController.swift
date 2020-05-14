@@ -24,6 +24,7 @@ class GUIViewController: NSViewController {
     
     @IBOutlet weak var initApply: NSButton!
 
+    @IBOutlet weak var logoOn: NSButton!
 
 
     
@@ -101,11 +102,19 @@ class GUIViewController: NSViewController {
     }
     
     
+    @IBAction func setLogo(_ sender: Any){
+        Razer.logo = logoOn.state == .on ? true : false
+        let logoTxt = Razer.logo ? "logo on" : "logo off"
+        pollDevice(logoTxt)
+    }
+    
+    
     @IBAction func savePrefs(_ sender: Any){
         let defaults = UserDefaults.standard
         defaults.set(initApply.state == .on ? true : false, forKey: "initApply")
         defaults.set(ignoreColor.state == .on ? true : false, forKey: "ignoreColor")
         defaults.set(singleColor.state == .on ? true : false, forKey: "singleColor")
+        defaults.set(logoOn.state == .on ? true : false, forKey: "logo")
         defaults.set(animationTextField.titleOfSelectedItem?.lowercased(), forKey: "animation")
         defaults.set(colorPicker1.color, forKey: "color1")
         defaults.set(colorPicker2.color, forKey: "color2")
